@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Create User</title>
+		<link rel="stylesheet" href="../css/Index.css" type="text/css">
+	</head>
+	<body>
+		<form class="form" action="../UserCreate" method="post">
+			<div align="center">
+				<table>
+					<tr>
+						<td class="img" align="center" colspan="2">
+							<h1 class="title">ComproCoches.com</h1>
+						</td>
+						</tr>
+					<tr>
+						<td class="img" align="center" colspan="2">
+							<h2 class="subtitle">Crear Cuenta</h2>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="text" required name="user" min="1" max="10" placeholder="Usuario">
+							<br><br>
+							<input required type="password" min="1" max="20" name="password" placeholder="Contraseña">
+							<br><br>
+							<input required type="text" max="10" name="name" placeholder="Nombre">
+							<br><br>
+							<input required type="text" max="10" name="surname" placeholder="Apellidos">
+							<br><br>
+							<!-- <label class="subtitle2">Sexo</label> -->
+								<select class="input" name="gender">
+									 <optgroup label="Sexo">
+										<option>Masculino</option>
+										<option>Femenino</option>
+									</optgroup>
+								</select>
+								<br><br>
+								<label class="subtitle2">Fecha de nacimiento</label>
+								<input required type="date" name="birthday">
+								<br><br>
+						</td>
+					</tr>
+					<tr align="center">
+						<td colspan="2"> 
+							<input class="submit2" type="submit" name="Login" value="Crear Usuario"> 
+						</td>
+					</tr>
+				</table>
+			</div>
+		</form>
+	</body>
+</html>
